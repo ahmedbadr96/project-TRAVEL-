@@ -1,7 +1,6 @@
 /* start variables  */
-:root {
+:root {}
 
-}
 /* End variables  */
 /* Start Global Rules */
 * {
@@ -10,7 +9,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
 
 html {
@@ -19,7 +17,6 @@ html {
 
 body {
     font-family: ;
-    overflow-x: hidden;
 }
 
 /* End Global Rules */
