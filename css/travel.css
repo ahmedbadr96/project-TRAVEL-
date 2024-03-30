@@ -1,5 +1,8 @@
 /* start variables  */
-:root {}
+:root {
+    --border-color: #afafaf;
+    --main-color: #001D4B;
+}
 
 /* End variables  */
 /* Start Global Rules */
@@ -13,6 +16,7 @@
 
 html {
     scroll-behavior: smooth;
+
 }
 
 body {
@@ -25,10 +29,53 @@ body {
 
 /* end components */
 /* --------------------------------------------------------------------------------------------------------- */
-.container {
+/* .container {
     width: 60% !important;
+} */
+/* @media (max-width: 576px) {
+    .container {
+        width: 100% !important;
+    }
+} */
+/* --------------------------------------------------------------------------------------------------------- */
+/* Start navbar */
+header {
+    border-bottom: 1px solid var(--border-color);
+    padding: 12px 0;
 }
 
-nav img {
-    height: 30px;
+nav .logo {
+    font-size: 30px;
+    font-weight: bold;
 }
+
+.navbar-nav {
+    transition: 0.3s;
+}
+
+.navbar-nav .line-p {
+    position: relative;
+    margin-left: 76px;
+    font-weight: 500;
+}
+
+.navbar-nav .line-p:hover {
+    color: var(--main-color);
+    display: block;
+}
+
+.navbar-nav .line-p::before {
+    content: "";
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 5px;
+    background-color: #001D4B;
+    bottom: -28px;
+    transition: 0.3s;
+}
+
+.navbar-nav .line-p:hover::before {
+    display: block;
+}
+/* End navbar */
