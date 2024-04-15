@@ -7,6 +7,7 @@
     max-width: 99%;
     margin: auto;
     --bs-gutter-x: 0 !important;
+    position: relative;
 }
 
 /* --------------------------------------------------------------------------------------------------------- */
@@ -30,3 +31,30 @@
 }
 
 /* End navbar */
+
+@media (max-width: 1410px) {
+
+    .carousel .text h1,
+    .carousel .text p:first-of-type,
+    .carousel .text p:last-of-type {
+        margin-left: clamp(20px, 9vw, 88px);
+        margin-right: clamp(20px, 9vw, 88px);
+    }
+    .carousel .text p:first-of-type {
+        margin-bottom: clamp(2px, 1vw, 16px);
+    }
+    .carousel .text p:last-of-type {
+        padding: 0;
+    }
+}
+
+@media (max-width: 703px) {
+    .carousel .text {
+        transform: translateY(-80%);
+    }
+}
+@media (max-width: 380px) {
+    .carousel .text {
+        transform: translateY(-60%);
+    }
+}
