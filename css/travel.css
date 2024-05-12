@@ -31,6 +31,19 @@ body {
 .main-color {
     color: var(--main-color) !important;
 }
+.text-group {
+    margin-bottom: 35px;
+}
+.text-top-imgs-one {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+}
+.text-top-imgs-two {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
 
 /* end components */
 /* --------------------------------------------------------------------------------------------------------- */
@@ -146,6 +159,8 @@ nav .logo {
     margin-top: 8px;
     padding: 0;
     position: relative !important;
+    overflow-y: hidden;
+    margin-bottom: 30px;
 }
 
 .slide {
@@ -197,9 +212,15 @@ nav .logo {
 }
 .u-i {
     position: absolute;
-    top: 90%;
+    top: 86%;
     z-index: 1;
     width: 100%;
 }
+/* start grid one */
+.grid-one .container-imp {
+    display: block;
+}
+
+/* End grid one */
 
 /* End carousel */
