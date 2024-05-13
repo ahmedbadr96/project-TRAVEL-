@@ -220,7 +220,15 @@ nav .logo {
 .grid-one .container-imp {
     display: block;
 }
-
+.cards {
+    height: 280px;
+    width: 360px;
+    max-width: 100%;
+}
+.cards img {
+    height: 280px;
+    width: 360px;
+}
 /* End grid one */
 
 /* End carousel */
